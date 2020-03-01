@@ -1,18 +1,12 @@
 import numpy as np
 import matplotlib
-matplotlib.use("agg")
 import matplotlib.pyplot as plt
 import pandas as pd
 # Fitting Polynomial Regression to the dataset
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
 
-dataset = pd.read_csv('https://s3.us-west-2.amazonaws.com/public.gamelab.fun/dataset/position_salaries.csv')
-X = dataset.iloc[:, 1:2].values
-y = dataset.iloc[:, 2].values
-print(X)
-
-# matplotlib.use("")
+matplotlib.use("agg")
 years_all = [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
 years_poly = [[2012], [2013], [2014], [2015], [2016], [2017], [2018], [2019]]
 years = [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
